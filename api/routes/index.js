@@ -7,7 +7,7 @@ const auth = require('./tokens');
 
 module.exports = (app) => {
   app.use('/courses', courses);
-  app.use('/students', students);
+  //app.use('/students', students);
   // app.use('/subjects', subjects);
   // app.use('/teachers', teachers);
   // app.use('/finished-course', finishedCourse);

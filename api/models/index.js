@@ -16,17 +16,6 @@ const db = {};
 
 let sequelize;
 
-/*sequelize = new Sequelize(config.database, config.username, config.password, {
-  host: 'localhost',
-  port: '5433',
-  dialect: 'postgres',
-  dialectOptions:{
-    ssl:{
-      require: false
-    }
-  },
-  ssl: false
-});*/
 sequelize = new Sequelize(`postgres://${config.username}:${config.password}@localhost:${config.port}/${config.database}`)
 
 fs
