@@ -1,0 +1,20 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Thu 2019-01-31 17:26:54 -03; 16h ago
+     Docs: https://docs.docker.com
+ Main PID: 2039 (dockerd)
+    Tasks: 22
+   CGroup: /system.slice/docker.service
+           ├─2039 /usr/bin/dockerd -H fd://
+           └─2270 docker-containerd -l unix:///var/run/docker/libcontainerd/docker-containerd.sock --metrics-interval=0 --start-timeout 2m --state-dir /var/run/docker/libcontainerd/containerd --shim docker-containerd-shim --runtime docker-runc
+
+ene 31 17:26:48 paralela dockerd[2039]: time="2019-01-31T17:26:48.095430764-03:00" level=warning msg="Your kernel does not support swap memory limit"
+ene 31 17:26:48 paralela dockerd[2039]: time="2019-01-31T17:26:48.095569654-03:00" level=warning msg="Your kernel does not support cgroup rt period"
+ene 31 17:26:48 paralela dockerd[2039]: time="2019-01-31T17:26:48.095603077-03:00" level=warning msg="Your kernel does not support cgroup rt runtime"
+ene 31 17:26:48 paralela dockerd[2039]: time="2019-01-31T17:26:48.097518077-03:00" level=info msg="Loading containers: start."
+ene 31 17:26:50 paralela dockerd[2039]: time="2019-01-31T17:26:50.562376220-03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+ene 31 17:26:51 paralela dockerd[2039]: time="2019-01-31T17:26:51.238968516-03:00" level=info msg="Loading containers: done."
+ene 31 17:26:54 paralela dockerd[2039]: time="2019-01-31T17:26:54.974360584-03:00" level=info msg="Daemon has completed initialization"
+ene 31 17:26:54 paralela dockerd[2039]: time="2019-01-31T17:26:54.974422650-03:00" level=info msg="Docker daemon" commit=89658be graphdriver=aufs version=17.05.0-ce
+ene 31 17:26:54 paralela dockerd[2039]: time="2019-01-31T17:26:54.984491584-03:00" level=info msg="API listen on /var/run/docker.sock"
+ene 31 17:26:54 paralela systemd[1]: Started Docker Application Container Engine.

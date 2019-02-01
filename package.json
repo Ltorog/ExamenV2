@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "author": "Luis Toro",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.4.0",
+    "jwt-simple": "^0.5.5",
+    "morgan": "~1.9.0",
+    "mysql2": "^1.6.4",
+    "pg": "^4.5.7",
+    "pg-hstore": "^2.3.2",
+    "regression": "^2.0.1",
+    "sequelize": "^3.34.0",
+    "sequelize-cli": "^2.8.0",
+    "sha512": "0.0.1"
+  }
+}
